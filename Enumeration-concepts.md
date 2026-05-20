@@ -175,5 +175,3 @@ Here are the **main techniques** explained simply:
 
 
 ---
-
-Would you like me to create a **printable PDF version** or add **command examples** for tools like `nslookup`, `Nmap`, `enum4linux`, or `snmpwalk`?
