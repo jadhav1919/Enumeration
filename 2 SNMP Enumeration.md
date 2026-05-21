@@ -178,8 +178,8 @@ snmpwalk -v1 -c public <Target-IP>
 | `-c public`   | Community string |
 | `<Target-IP>` | Victim machine   |
 
----
-
+```bash
+snmpwalk -v1 -c public 192.168.1.
 # What SnmpWalk Does
 
 It walks through the MIB database and retrieves information.
@@ -194,8 +194,6 @@ Can reveal:
 * RAM
 * Hostname
 
----
-
 # Useful SnmpWalk Commands
 
 ## SNMPv2 Enumeration
@@ -204,15 +202,11 @@ Can reveal:
 snmpwalk -v2c -c public <Target-IP>
 ```
 
----
-
 ## Installed Software
 
 ```bash id="qlpccm"
 snmpwalk -v2c -c public <Target-IP> hrSWInstalledName
 ```
-
----
 
 ## RAM Information
 
@@ -220,13 +214,9 @@ snmpwalk -v2c -c public <Target-IP> hrSWInstalledName
 snmpwalk -v2c -c public <Target-IP> hrMemorySize
 ```
 
----
-
 # SNMP Enumeration Using Nmap
 
 Nmap has NSE scripts for SNMP.
-
----
 
 ## Running Processes
 
@@ -302,49 +292,3 @@ Can:
 | 162  | UDP      | SNMP Traps   |
 
 
-# Important Exam/Interview Points
-
-## SNMP Uses UDP
-
-```text
-UDP 161
-```
-
-
-## Default Community Strings
-
-```text
-public
-private
-```
-
-
-## SNMP Enumeration Goal
-
-Collect:
-
-* Users
-* Processes
-* Device information
-* Network details
-
-# Simple Flow of SNMP Enumeration
-
-```text
-Attacker
-   ↓
-Checks UDP 161
-   ↓
-Tries community string
-   ↓
-Queries SNMP agent
-   ↓
-Retrieves system/network information
-```
-
-# Very Important Security Point
-
-If: public/private
-community strings remain enabled,
-attackers may gain huge information about the network.
-Sometimes configuration modification also becomes possible.
