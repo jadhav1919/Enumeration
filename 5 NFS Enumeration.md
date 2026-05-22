@@ -356,19 +356,3 @@ Misconfigured NFS may allow:
 * Writable remote shares
 * Sensitive file disclosure
 * Remote privilege escalation
-
----
-
-# Common NFS Attack Flow
-
-```text id="g2m8q5"
-Discover RPCBind
-        ↓
-Identify NFS Service
-        ↓
-Enumerate Shares
-        ↓
-Mount Remote Share
-        ↓
-Access Sensitive Files
-```
