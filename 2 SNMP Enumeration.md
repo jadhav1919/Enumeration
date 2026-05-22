@@ -317,7 +317,7 @@ SNMP Enumeration Practical Demonstration Using Kali Linux and Ubuntu
 | private          | Read/Write |
 
 
-# Phase 1 — Verify Connectivity
+# Phase 1  Verify Connectivity
 
 # Check Kali IP
 
@@ -369,7 +369,7 @@ Network communication successful
 ```
 
 
-# Phase 2 — Install SNMP on Ubuntu
+# Phase 2  Install SNMP on Ubuntu
 
 # Update Packages
 
@@ -397,7 +397,7 @@ active (running)
 ```
 
 
-# Phase 3 — Configure SNMP
+# Phase 3  Configure SNMP
 
 # Open Configuration File
 
@@ -473,7 +473,7 @@ Meaning:
 SNMP service listening successfully
 ```
 
-# Phase 4 — Discover SNMP Service
+# Phase 4  Discover SNMP Service
 
 # Scan UDP Port 161
 
@@ -504,7 +504,7 @@ Meaning:
 SNMP service detected successfully
 ```
 
-# Phase 5 — SNMP Enumeration Using snmpwalk
+# Phase 5 SNMP Enumeration Using snmpwalk
 
 # Basic Enumeration
 
@@ -554,7 +554,7 @@ Meaning:
 SNMP enumeration successful
 ```
 
-# Phase 6 — Enumeration Using Nmap NSE Scripts
+# Phase 6  Enumeration Using Nmap NSE Scripts
 
 # Get System Information
 
@@ -593,7 +593,7 @@ Purpose:
 * Interface details
 
 
-# Phase 7 — SNMP Enumeration Using snmp-check
+# Phase 7  SNMP Enumeration Using snmp-check
 
 # Run snmp-check
 
