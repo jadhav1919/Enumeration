@@ -159,7 +159,7 @@ Using LDAP enumeration attackers may collect:
 
 # Manual LDAP Enumeration
 
-# Step 1 — Scan LDAP Ports
+# Step 1  Scan LDAP Ports
 
 Using Nmap:
 
@@ -183,7 +183,7 @@ Checks:
 ```
 
 
-# Step 2 — Install ldap3 Library
+# Step 2 Install ldap3 Library
 
 ```bash id="p4w7x9"
 pip3 install ldap3
@@ -191,20 +191,20 @@ pip3 install ldap3
 
 
 
-# Step 3 — Start Python
+# Step 3 Start Python
 
 ```bash id="j6m2r8"
 python3
 ```
 
-# Step 4 — Import ldap3
+# Step 4  Import ldap3
 
 ```python id="z8n5t1"
 import ldap3
 ```
 
 
-# Step 5 — Create LDAP Server Object
+# Step 5 Create LDAP Server Object
 
 ```python id="x1v4m7"
 server = ldap3.Server('Target-IP', get_info=ldap3.ALL, port=389)
@@ -221,14 +221,14 @@ Connects to:
 
 
 
-# Step 6 — Create Connection
+# Step 6 Create Connection
 
 ```python id="u5q2n9"
 connection = ldap3.Connection(server)
 ```
 
 
-# Step 7 — Bind Connection
+# Step 7  Bind Connection
 
 ```python id="r3m8x4"
 connection.bind()
@@ -246,7 +246,7 @@ Meaning:
 Connection successful
 ```
 
-# Step 8 — Retrieve Server Information
+# Step 8 Retrieve Server Information
 
 ```python id="y2t7q8"
 server.info
@@ -262,7 +262,7 @@ Possible output:
 * Supported controls
 * Directory structure
 
-# Step 9 — Enumerate Directory Objects
+# Step 9 Enumerate Directory Objects
 
 ```python id="m9r4x1"
 connection.search(search_base='DC=DOMAIN,DC=LOCAL',
@@ -280,7 +280,7 @@ Retrieves:
 * Entire directory tree
 
 
-# Step 10 — Dump LDAP Entries
+# Step 10 Dump LDAP Entries
 
 ```python id="w6n1v3"
 connection.entries
