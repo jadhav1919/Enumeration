@@ -152,7 +152,7 @@ Retrieve DNS Records
 ```
 
 
-# Step 1 — Find Name Servers
+# Step 1  Find Name Servers
 
 ```bash id="n2m6q5"
 dig ns <Target-Domain>
@@ -168,7 +168,7 @@ dig ns example.com
 
 
 
-# Step 2 — Attempt Zone Transfer
+# Step 2  Attempt Zone Transfer
 
 ```bash id="x1v7m3"
 dig @<Name-Server> <Target-Domain> axfr
