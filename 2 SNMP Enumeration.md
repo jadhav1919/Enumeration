@@ -180,6 +180,7 @@ snmpwalk -v1 -c public <Target-IP>
 
 ```bash
 snmpwalk -v1 -c public 192.168.1.
+```
 # What SnmpWalk Does
 
 It walks through the MIB database and retrieves information.
