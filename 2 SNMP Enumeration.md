@@ -526,6 +526,7 @@ snmpwalk -v1 -c public 192.168.1.40
 
 `snmpwalk` walks through the MIB database and retrieves SNMP information.
 
+![SNMPcheck](images/snmpwalk.png)
 
 # Information Gathered
 
@@ -560,6 +561,7 @@ SNMP enumeration successful
 ```bash id="k1q8v3"
 nmap -sU -p 161 --script=snmp-sysdescr 192.168.1.40
 ```
+![SNMPcheck](images/sysinfo.png)
 
 Purpose:
 
@@ -598,7 +600,7 @@ Purpose:
 ```bash id="q6x1m4"
 snmp-check 192.168.1.40
 ```
-
+![SNMPcheck](images/check.png)
 # Information Collected
 
 * Hostname
